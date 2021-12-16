@@ -1,0 +1,11 @@
+// const data = 'STATION:stations-schedule_<contentId>';
+const data = 'STATION:stations-schedule_<contentId>';
+const data2 = 'MODULES:/sportsteams/<contentId>';
+const regex = /(.*):|\/|<(.*)>|_<(.*)>/g;
+const regex2 = /:(.*)/g;
+const finalData = data.replace(regex, '');
+const finalData2 = data2.replace(regex, '');
+const finalData3 = data2.replace(regex2, '');
+console.log(finalData);
+console.log(finalData2);
+console.log(finalData3);
